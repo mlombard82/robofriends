@@ -10,5 +10,11 @@ export const robots = [
         name: 'Ervin Howell',
         username: 'Antonette',
         email: 'shanna@melissa.tv'
+    },
+    {
+        id: 3,
+        name: 'Mario Howell',
+        username: 'Antony',
+        email: 'mario@mario.tv'
     }
 ]
