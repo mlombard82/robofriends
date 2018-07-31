@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
-import CardList from './CardList';
-import SearchBox from './SearchBox';
-import Scroll from './Scroll';
+import CardList from '../components/CardList';
+import SearchBox from '../components/SearchBox';
+import Scroll from '../components/Scroll';
 import './App.css';
 
 
@@ -31,9 +31,8 @@ class App extends Component {
             return robot.name.toLowerCase().includes(searchfield.toLowerCase())
         });
 
-            return (!robots.length)? 
-            <h1>LOADING...</h1>
-            : 
+            return !robots.length? 
+            <h1>LOADING...</h1> : 
             (
                 <div className='tc'>
                     <h1 className='f1'>RoboFriends</h1>
